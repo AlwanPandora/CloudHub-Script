@@ -1,187 +1,118 @@
--- Function to create the first GUI (Like Image)
-local function createFirstGUI()
-    -- Create ScreenGui
-    local screenGui = Instance.new("ScreenGui")
-    screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
 
-    -- Create Like ImageButton
-    local likeButton = Instance.new("ImageButton")
-    likeButton.Name = "LikeButton"
-    likeButton.Image = "rbxassetid://114669344245552" -- Replace with your image Asset ID
-    likeButton.Size = UDim2.new(0, 100, 0, 100) -- Adjust size as needed
-    likeButton.Position = UDim2.new(0.5, -50, 0.5, -50) -- Center of the screen
-    likeButton.BackgroundTransparency = 1 -- Make the background transparent
-    likeButton.Parent = screenGui
+local win = DiscordLib:Window("discord library")
 
-    -- Make the image draggable
-    local UserInputService = game:GetService("UserInputService")
-    local dragging = false
-    local dragStartPos
-    local buttonStartPos
+local serv = win:Server("Preview", "")
 
-    likeButton.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            dragging = true
-            dragStartPos = Vector2.new(input.Position.X, input.Position.Y)
-            buttonStartPos = likeButton.Position
-        end
-    end)
+local btns = serv:Channel("Buttons")
 
-    likeButton.InputEnded:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            dragging = false
-        end
-    end)
+btns:Button(
+    "Kill all",
+    function()
+        DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
+    end
+)
 
-    UserInputService.InputChanged:Connect(function(input)
-        if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-            local dragDelta = Vector2.new(input.Position.X, input.Position.Y) - dragStartPos
-            likeButton.Position = UDim2.new(buttonStartPos.X.Scale, buttonStartPos.X.Offset + dragDelta.X, buttonStartPos.Y.Scale, buttonStartPos.Y.Offset + dragDelta.Y)
-        end
-    end)
+btns:Seperator()
 
-    -- Function to load the main script GUI
-    likeButton.MouseButton1Click:Connect(function()
-        -- Remove the first GUI
-        screenGui:Destroy()
+btns:Button(
+    "Get max level",
+    function()
+        DiscordLib:Notification("Notification", "Max level!", "Okay!")
+    end
+)
 
-        -- Load the main script GUI (Discord Library)
-        loadMainScriptGUI()
-    end)
-end
+local tgls = serv:Channel("Toggles")
 
--- Function to load the main script GUI (Discord Library)
-local function loadMainScriptGUI()
-    -- Load Discord Library
-    local DiscordLib = loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+tgls:Toggle(
+    "Auto-Farm",
+    false,
+    function(bool)
+        print(bool)
+    end
+)
 
-    -- Create Discord Window
-    local win = DiscordLib:Window("discord library")
+local sldrs = serv:Channel("Sliders")
 
-    -- Create Server and Channels
-    local serv = win:Server("Preview", "")
-    local btns = serv:Channel("Buttons")
+local sldr =
+    sldrs:Slider(
+    "Slide me!",
+    0,
+    1000,
+    400,
+    function(t)
+        print(t)
+    end
+)
 
-    -- Add Buttons to the Buttons Channel
-    btns:Button(
-        "Kill all",
-        function()
-            DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
-        end
-    )
+sldrs:Button(
+    "Change to 50",
+    function()
+        sldr:Change(50)
+    end
+)
 
-    btns:Seperator()
+local drops = serv:Channel("Dropdowns")
 
-    btns:Button(
-        "Get max level",
-        function()
-            DiscordLib:Notification("Notification", "Max level!", "Okay!")
-        end
-    )
+local drop =
+    drops:Dropdown(
+    "Pick me!",
+    {"Option 1", "Option 2", "Option 3", "Option 4", "Option 5"},
+    function(bool)
+        print(bool)
+    end
+)
 
-    -- Add Toggles to the Toggles Channel
-    local tgls = serv:Channel("Toggles")
+drops:Button(
+    "Clear",
+    function()
+        drop:Clear()
+    end
+)
 
-    tgls:Toggle(
-        "Auto-Farm",
-        false,
-        function(bool)
-            print(bool)
-        end
-    )
+drops:Button(
+    "Add option",
+    function()
+        drop:Add("Option")
+    end
+)
 
-    -- Add Sliders to the Sliders Channel
-    local sldrs = serv:Channel("Sliders")
+local clrs = serv:Channel("Colorpickers")
 
-    local sldr =
-        sldrs:Slider(
-        "Slide me!",
-        0,
-        1000,
-        400,
-        function(t)
-            print(t)
-        end
-    )
+clrs:Colorpicker(
+    "ESP Color",
+    Color3.fromRGB(255, 1, 1),
+    function(t)
+        print(t)
+    end
+)
 
-    sldrs:Button(
-        "Change to 50",
-        function()
-            sldr:Change(50)
-        end
-    )
+local textbs = serv:Channel("Textboxes")
 
-    -- Add Dropdowns to the Dropdowns Channel
-    local drops = serv:Channel("Dropdowns")
+textbs:Textbox(
+    "Gun power",
+    "Type here!",
+    true,
+    function(t)
+        print(t)
+    end
+)
 
-    local drop =
-        drops:Dropdown(
-        "Pick me!",
-        {"Option 1", "Option 2", "Option 3", "Option 4", "Option 5"},
-        function(bool)
-            print(bool)
-        end
-    )
+local lbls = serv:Channel("Labels")
 
-    drops:Button(
-        "Clear",
-        function()
-            drop:Clear()
-        end
-    )
+lbls:Label("This is just a label.")
 
-    drops:Button(
-        "Add option",
-        function()
-            drop:Add("Option")
-        end
-    )
+local bnds = serv:Channel("Binds")
 
-    -- Add Colorpickers to the Colorpickers Channel
-    local clrs = serv:Channel("Colorpickers")
+bnds:Bind(
+    "Kill bind",
+    Enum.KeyCode.RightShift,
+    function()
+        print("Killed everyone!")
+    end
+)
 
-    clrs:Colorpicker(
-        "ESP Color",
-        Color3.fromRGB(255, 1, 1),
-        function(t)
-            print(t)
-        end
-    )
+serv:Channel("by dawid#7205")
 
-    -- Add Textboxes to the Textboxes Channel
-    local textbs = serv:Channel("Textboxes")
-
-    textbs:Textbox(
-        "Gun power",
-        "Type here!",
-        true,
-        function(t)
-            print(t)
-        end
-    )
-
-    -- Add Labels to the Labels Channel
-    local lbls = serv:Channel("Labels")
-
-    lbls:Label("This is just a label.")
-
-    -- Add Binds to the Binds Channel
-    local bnds = serv:Channel("Binds")
-
-    bnds:Bind(
-        "Kill bind",
-        Enum.KeyCode.RightShift,
-        function()
-            print("Killed everyone!")
-        end
-    )
-
-    -- Add Credits Channel
-    serv:Channel("by dawid#7205")
-
-    -- Add Main Server
-    win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
-end
-
--- Call the function to create the first GUI
-createFirstGUI()
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
