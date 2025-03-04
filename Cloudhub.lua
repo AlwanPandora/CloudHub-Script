@@ -15,7 +15,7 @@ btns:Seperator()
 
 btns:Button("FLY GUI", function()
       DiscordLib:Notification("Notification", "Executed!", "Okay!")
-    loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
 
 btns:Seperator()
