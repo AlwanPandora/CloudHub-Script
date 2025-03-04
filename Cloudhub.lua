@@ -109,7 +109,7 @@ bnds:Bind(
     "Kill bind",
     Enum.KeyCode.RightShift,
     function()
-        print("Killed everyone!")
+        print("loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()")
     end
 )
 
