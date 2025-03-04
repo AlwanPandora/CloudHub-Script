@@ -1,12 +1,88 @@
-{
-  "always_run_in_app" : false,
-  "icon" : {
-    "color" : "deep-brown",
-    "glyph" : "magic"
-  },
-  "name" : "Cloudhub",
-  "script" : "local OrionLib = loadstring(game:HttpGet(('https:\/\/raw.githubusercontent.com\/shlexware\/Orion\/main\/source')))()\n\nOrionLib:MakeNotification({\n\tName = \"Universal Script loader CRACKED BY BACKUP\",\n\tContent = \"made by Cloud (GUI by backup#6002)\",\n\tImage = \"rbxassetid:\/\/4483345998\",\n\tTime = 10\n})\n\nOrionLib:MakeNotification({\n\tName = \"CloudHub Script\",\n\tContent = \"by Cloud (Credit to Scripthub)\",\n\tImage = \"rbxassetid:\/\/13762461264\",\n\tTime = 10\n})\n\nlocal Window = OrionLib:MakeWindow({Name = \"Universal script loader\", HidePremium = false,IntroText = \"Universal Script Loader\", SaveConfig = true, ConfigFolder = \"OrionTest\"})\n\nlocal Tab = Window:MakeTab({\n\tName = \"Credits \/ info\",\n\tIcon = \"rbxassetid:\/\/4483345998\",\n\tPremiumOnly = false\n})\n\nTab:AddParagraph(\"Credits\",\"Made by Cloud                                                                      Original Code (Script GUI by Backup)\")\n\nTab:AddParagraph(\"⚠️Warning\",\"Execute the script for the appropraite game! AND EXECUTE IT ONE TIME! SO DONT SPAM IT (if u execute the wrong script u can got kick\/banned) im not responsabe for any ban! 🤕\")\n\nTab:AddParagraph(\"Updates:\",\"version CRACKED EONHUB                                                                               [=]New scripts is comming\")\n\nTab:AddButton({\n\tName = \"Copy Discord server link\",\n\tCallback = function()\n\tOrionLib:MakeNotification({\n\tName = \"link succesfly copied to clipboard\",\n\tContent = \":)\",\n\tImage = \"rbxassetid:\/\/4483345998\",\n\tTime = 3\n})\n\tsetclipboard(\"https:\/\/discord.gg\/productions\")\n    toclipboard(\"https:\/\/discord.gg\/productions\")\n\tend\n})\n\nlocal Tab = Window:MakeTab({\n\tName = \"Aimbots\",\n\tIcon = \"rbxassetid:\/\/4483345998\",\n\tPremiumOnly = false\n})\n\nlocal Section = Tab:AddSection({\n\tName = \"Aimbots\"\n})\n\n\nTab:AddParagraph(\"Note:\",\"Some aimbots are for pc !\")\n\nTab:AddButton({\n\tName = \"Aimbot universal (pc)\",\n\tCallback = function()\n\tOrionLib:MakeNotification({\n\tName = \"Executed !\",\n\tContent = \"Succesfly executed Aimbot universal (pc)\",\n\tImage = \"rbxassetid:\/\/4483345998\",\n\tTime = 5\n})\n      \t\tprint(loadstring(game:HttpGet(\"https:\/\/pastebin.com\/raw\/GvKGSS0G\"))())\n  \tend    \n})\n\nTab:AddButton({\n\tName = \"Aimbot universal (mobile)\",\n\tCallback = function()\n\tOrionLib:MakeNotification({\n\tName = \"Executed !\",\n\tContent = \"Succesfly executed Aimbot universal (mobile)\",\n\tImage = \"rbxassetid:\/\/4483345998\",\n\tTime = 5\n})\n      \t\tprint(loadstring(game:HttpGet('https:\/\/pastebin.com\/raw\/YSL3xKYU'))())\n  \tend    \n})\n\n\nOrionLib:Init()",
-  "share_sheet_inputs" : [
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
+// icon-color: deep-brown; icon-glyph: magic;
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-  ]
-}
+OrionLib:MakeNotification({
+	Name = "Universal Script loader CRACKED BY BACKUP",
+	Content = "made by Cloud (GUI by backup#6002)",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+OrionLib:MakeNotification({
+	Name = "CloudHub Script",
+	Content = "by Cloud (Credit to Scripthub)",
+	Image = "rbxassetid://13762461264",
+	Time = 10
+})
+
+local Window = OrionLib:MakeWindow({Name = "Universal script loader", HidePremium = false,IntroText = "Universal Script Loader", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Credits / info",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Credits","Made by Cloud                                                                      Original Code (Script GUI by Backup)")
+
+Tab:AddParagraph("⚠️Warning","Execute the script for the appropraite game! AND EXECUTE IT ONE TIME! SO DONT SPAM IT (if u execute the wrong script u can got kick/banned) im not responsabe for any ban! 🤕")
+
+Tab:AddParagraph("Updates:","version CRACKED EONHUB                                                                               [=]New scripts is comming")
+
+Tab:AddButton({
+	Name = "Copy Discord server link",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "link succesfly copied to clipboard",
+	Content = ":)",
+	Image = "rbxassetid://4483345998",
+	Time = 3
+})
+	setclipboard("https://discord.gg/productions")
+    toclipboard("https://discord.gg/productions")
+	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Aimbots",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Aimbots"
+})
+
+
+Tab:AddParagraph("Note:","Some aimbots are for pc !")
+
+Tab:AddButton({
+	Name = "Aimbot universal (pc)",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Executed !",
+	Content = "Succesfly executed Aimbot universal (pc)",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+      		print(loadstring(game:HttpGet("https://pastebin.com/raw/GvKGSS0G"))())
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Aimbot universal (mobile)",
+	Callback = function()
+	OrionLib:MakeNotification({
+	Name = "Executed !",
+	Content = "Succesfly executed Aimbot universal (mobile)",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+      		print(loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))())
+  	end    
+})
+
+
+OrionLib:Init()
