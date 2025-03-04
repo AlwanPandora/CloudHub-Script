@@ -27,6 +27,13 @@ end)
 
 btns:Seperator()
 
+btns:Button("Infinite Yield", function()
+            DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+btns:Seperator()
+
 btns:Button("Fling All", function()
           DiscordLib:Notification("Notification", "Fling All executed!", "Okay!")
     loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
