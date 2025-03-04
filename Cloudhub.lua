@@ -104,6 +104,29 @@ btns:Button("Auto farm script", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/OhhMyGehlee/fo/refs/heads/main/ot"))()
 end)
 
+local btns = serv:Channel("Doomspire Brickbattle")
+
+btns:Button("Auto Kill On", function()
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    getgenv().BatusMadeThisShit=true;loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/Doomspire%20Brickbattle/autofarm_kills.lua"))();
+end)
+
+btns:Seperator()
+
+btns:Button("Auto Kill Off", function()
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    getgenv().BatusMadeThisShit = false
+end)
+
+
+
+
+
+
+end)
+
+btns:Seperator()
+
 
 
 serv:Channel("by Cloud")
