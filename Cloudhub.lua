@@ -8,7 +8,7 @@ local serv = win:Server("CloudHub Script", "")
 local btns = serv:Channel("Universal")
 
 btns:Button("Mobile Keyboard", function()
-    DiscordLib:Notification("Notification", "Loading Mobile Keyboard...")
+    DiscordLib:Notification("Notification", "Loading Mobile Keyboard..." "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
