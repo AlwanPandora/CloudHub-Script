@@ -122,13 +122,6 @@ end)
 
 
 
-
-end)
-
-btns:Seperator()
-
-
-
 serv:Channel("by Cloud")
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
