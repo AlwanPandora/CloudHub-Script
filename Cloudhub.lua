@@ -3,9 +3,9 @@ local DiscordLib =
 
 local win = DiscordLib:Window("discord library")
 
-local serv = win:Server("Preview", "")
+local serv = win:Server("CloudHub Script", "")
 
-local btns = serv:Channel("Buttons")
+local btns = serv:Channel("Universal")
 
 btns:Button(
     "Mobile Keyboard",
@@ -34,6 +34,27 @@ btns:Button(
     end
 )
 
+btns:Seperator()
+
+btns:Button(
+    "Fling All",
+    function()
+    print(loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))())
+        DiscordLib:Notification("Notification", "Executed")
+    end
+)
+
+local btns = serv:Channel("Blox Fruits")
+
+btns:Button(
+    "W-Azure",
+    function() print(getgenv().Team = "Pirates"
+getgenv().FixCrash = false
+getgenv().FixCrash2 = false
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))())
+        DiscordLib:Notification("Notification", "Executed")
+    end
+)
 
 
 serv:Channel("by dawid#7205")
