@@ -79,6 +79,6 @@ btns:Button("Ronix Hub", function()
 
 end)
 
-serv:Channel("by dawid#7205")
+serv:Channel("by Cloud")
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
