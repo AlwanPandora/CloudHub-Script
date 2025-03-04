@@ -79,6 +79,29 @@ btns:Button("Ronix Hub", function()
 
 end)
 
+local btns = serv:Channel("Blue Lock Rivals")
+
+btns:Button("Tbao Hub", function()
+   DiscordLib:Notification("Notification", "Executed!", "Okay!")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubBlueLockRivals"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Tbao Hub", function()
+   DiscordLib:Notification("Notification", "Executed!", "Okay!")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubBlueLockRivals"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Auto farm script", function()
+   DiscordLib:Notification("Notification", "Executed!", "Okay!")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/OhhMyGehlee/fo/refs/heads/main/ot"))()
+end)
+
+
+
 serv:Channel("by Cloud")
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
