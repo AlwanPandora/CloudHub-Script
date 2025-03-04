@@ -8,14 +8,14 @@ local btns = serv:Channel("Universal")
 
 btns:Button("Mobile Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-    DiscordLib:Notification("Notification", "Mobile Keyboard loaded!", "Okay!")
+    DiscordLib:Notification("Notification", "Mobile Keyboard loaded!")
 end)
 
 btns:Seperator()
 
 btns:Button("FLY GUI", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
-    DiscordLib:Notification("Notification", "Fly GUI loaded!", "Okay!")
+    DiscordLib:Notification("Notification", "Fly GUI loaded!")
 end)
 
 btns:Seperator()
@@ -40,6 +40,20 @@ btns:Button("W-Azure", function()
     getgenv().FixCrash2 = false
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
     DiscordLib:Notification("Notification", "W-Azure executed!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Redz Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+    DiscordLib:Notification("Notification", "Script loaded!")
+end)
+
+btns:Seperator()
+
+btns:Button("HoHo Hub (Key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+    DiscordLib:Notification("Notification", "Script loaded!")
 end)
 
 serv:Channel("by dawid#7205")
