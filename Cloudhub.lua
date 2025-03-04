@@ -45,35 +45,35 @@ end)
 btns:Seperator()
 
 btns:Button("Redz Hub", function()
-          DiscordLib:Notification("Notification", "Script loaded!")
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 end)
 
 btns:Seperator()
 
 btns:Button("HoHo Hub (Key)", function()
-          DiscordLib:Notification("Notification", "Script loaded!")
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 end)
 
 local btns = serv:Channel("Fisch")
 
 btns:Button("Zenith Hub", function()
-          DiscordLib:Notification("Notification", "Script loaded!")
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/ZenithHub/refs/heads/main/Loader"))()
 end)
 
 btns:Seperator()
 
 btns:Button("Native Script", function()
-          DiscordLib:Notification("Notification", "Script loaded!")
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
 end)
 
 btns:Seperator()
 
 btns:Button("Ronix Hub", function()
-          DiscordLib:Notification("Notification", "Script loaded!")
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1255807d4f3b118b6636cfd3d386d8b8.lua"))()
 
 
@@ -88,9 +88,13 @@ end)
 
 btns:Seperator()
 
-btns:Button("Tbao Hub", function()
+btns:Button("Infinite Stamina", function()
    DiscordLib:Notification("Notification", "Executed!", "Okay!")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubBlueLockRivals"))()
+        local args = {
+    [1] = 0/0
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("StaminaService"):WaitForChild("RE"):WaitForChild("DecreaseStamina"):FireServer(unpack(args))
 end)
 
 btns:Seperator()
