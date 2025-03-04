@@ -1,113 +1,118 @@
-local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
 
--- Notifications
-OrionLib:MakeNotification({
-    Name = "Universal Script loader CRACKED BY BACKUP",
-    Content = "made by Cloud (GUI by backup#6002)",
-    Image = "rbxassetid://4483345998",
-    Time = 10
-})
+local win = DiscordLib:Window("discord library")
 
-OrionLib:MakeNotification({
-    Name = "CloudHub Script",
-    Content = "by Cloud (Credit to Scripthub)",
-    Image = "rbxassetid://13762461264",
-    Time = 10
-})
+local serv = win:Server("Preview", "")
 
--- Main Window
-local Window = OrionLib:MakeWindow({
-    Name = "Universal script loader",
-    HidePremium = false,
-    IntroText = "Universal Script Loader",
-    SaveConfig = true,
-    ConfigFolder = "OrionTest"
-})
+local btns = serv:Channel("Buttons")
 
--- Credits/Info Tab
-local CreditsTab = Window:MakeTab({
-    Name = "Credits / info",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
-CreditsTab:AddParagraph("Credits", "Made by Cloud                                                                      Original Code (Script GUI by Backup)")
-CreditsTab:AddParagraph("⚠️Warning", "Execute the script for the appropriate game! AND EXECUTE IT ONE TIME! SO DON'T SPAM IT (if you execute the wrong script you can get kick/banned) I'm not responsible for any ban! 🤕")
-CreditsTab:AddParagraph("Updates:", "version CRACKED EONHUB                                                                               [=]New scripts are coming")
-
-CreditsTab:AddButton({
-    Name = "Copy Discord server link",
-    Callback = function()
-        setclipboard("https://discord.gg/productions")
-        OrionLib:MakeNotification({
-            Name = "Link successfully copied to clipboard",
-            Content = ":)",
-            Image = "rbxassetid://4483345998",
-            Time = 3
-        })
+btns:Button(
+    "Kill all",
+    function()
+        DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
     end
-})
+)
 
--- Aimbots Tab
-local AimbotTab = Window:MakeTab({
-    Name = "Aimbots",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
+btns:Seperator()
 
-AimbotTab:AddSection({
-    Name = "Aimbots"
-})
-
-AimbotTab:AddParagraph("Note:", "Some aimbots are for PC!")
-
-AimbotTab:AddButton({
-    Name = "Aimbot universal (pc)",
-    Callback = function()
-        local success, err = pcall(function()
-            loadstring(game:HttpGet("https://pastebin.com/raw/GvKGSS0G"))()
-        end)
-        if success then
-            OrionLib:MakeNotification({
-                Name = "Executed!",
-                Content = "Successfully executed Aimbot universal (pc)",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        else
-            OrionLib:MakeNotification({
-                Name = "Error!",
-                Content = "Failed to execute Aimbot universal (pc): " .. err,
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        end
+btns:Button(
+    "Get max level",
+    function()
+        DiscordLib:Notification("Notification", "Max level!", "Okay!")
     end
-})
+)
 
-AimbotTab:AddButton({
-    Name = "Aimbot universal (mobile)",
-    Callback = function()
-        local success, err = pcall(function()
-            loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
-        end)
-        if success then
-            OrionLib:MakeNotification({
-                Name = "Executed!",
-                Content = "Successfully executed Aimbot universal (mobile)",
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        else
-            OrionLib:MakeNotification({
-                Name = "Error!",
-                Content = "Failed to execute Aimbot universal (mobile): " .. err,
-                Image = "rbxassetid://4483345998",
-                Time = 5
-            })
-        end
+local tgls = serv:Channel("Toggles")
+
+tgls:Toggle(
+    "Auto-Farm",
+    false,
+    function(bool)
+        print(bool)
     end
-})
+)
 
--- Initialize OrionLib
-OrionLib:Init()
+local sldrs = serv:Channel("Sliders")
+
+local sldr =
+    sldrs:Slider(
+    "Slide me!",
+    0,
+    1000,
+    400,
+    function(t)
+        print(t)
+    end
+)
+
+sldrs:Button(
+    "Change to 50",
+    function()
+        sldr:Change(50)
+    end
+)
+
+local drops = serv:Channel("Dropdowns")
+
+local drop =
+    drops:Dropdown(
+    "Pick me!",
+    {"Option 1", "Option 2", "Option 3", "Option 4", "Option 5"},
+    function(bool)
+        print(bool)
+    end
+)
+
+drops:Button(
+    "Clear",
+    function()
+        drop:Clear()
+    end
+)
+
+drops:Button(
+    "Add option",
+    function()
+        drop:Add("Option")
+    end
+)
+
+local clrs = serv:Channel("Colorpickers")
+
+clrs:Colorpicker(
+    "ESP Color",
+    Color3.fromRGB(255, 1, 1),
+    function(t)
+        print(t)
+    end
+)
+
+local textbs = serv:Channel("Textboxes")
+
+textbs:Textbox(
+    "Gun power",
+    "Type here!",
+    true,
+    function(t)
+        print(t)
+    end
+)
+
+local lbls = serv:Channel("Labels")
+
+lbls:Label("This is just a label.")
+
+local bnds = serv:Channel("Binds")
+
+bnds:Bind(
+    "Kill bind",
+    Enum.KeyCode.RightShift,
+    function()
+        print("Killed everyone!")
+    end
+)
+
+serv:Channel("by dawid#7205")
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
