@@ -7,8 +7,11 @@ local serv = win:Server("CloudHub Script", "")
 local btns = serv:Channel("Universal")
 
 btns:Button("Mobile Keyboard", function()
+    -- Show the notification first
+    DiscordLib:Notification("Notification", "Loading Mobile Keyboard...")
+    
+    -- Execute the script after the notification
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-    DiscordLib:Notification("Notification", "Mobile Keyboard loaded!")
 end)
 
 btns:Seperator()
