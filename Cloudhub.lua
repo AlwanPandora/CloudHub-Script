@@ -137,26 +137,27 @@ local function createGUI()
     -- Create Like ImageButton
     local likeButton = Instance.new("ImageButton")
     likeButton.Name = "LikeButton"
-    likeButton.Image = "rbxassetid://114669344245552" -- Use the Asset ID from the URL
-    likeButton.Size = UDim2.new(0, 50, 0, 50)
-    likeButton.Position = UDim2.new(0.5, -25, 0.5, -25) -- Center of the screen
+    likeButton.Image = "rbxassetid://114669344245552" -- Replace with your image Asset ID
+    likeButton.Size = UDim2.new(0, 100, 0, 100) -- Adjust size as needed
+    likeButton.Position = UDim2.new(0.5, -50, 0.5, -50) -- Center of the screen
+    likeButton.BackgroundTransparency = 1 -- Make the background transparent
     likeButton.Parent = screenGui
 
     -- Create GUI Frame
     local guiFrame = Instance.new("Frame")
     guiFrame.Name = "GUIFrame"
-    guiFrame.Size = UDim2.new(0, 200, 0, 150)
-    guiFrame.Position = UDim2.new(0.5, -100, 0.5, -75) -- Center of the screen
-    guiFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-    guiFrame.Visible = false
+    guiFrame.Size = UDim2.new(0, 200, 0, 150) -- Adjust size as needed
+    guiFrame.Position = UDim2.new(0.5, -100, 0.5, -75) -- Position it near the image
+    guiFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50) -- Set background color
+    guiFrame.Visible = false -- Initially hidden
     guiFrame.Parent = screenGui
 
     -- Add a label to the GUI Frame
     local label = Instance.new("TextLabel")
-    label.Text = "This is a GUI!"
+    label.Text = "This is the GUI!"
     label.Size = UDim2.new(1, 0, 1, 0)
-    label.TextColor3 = Color3.fromRGB(255, 255, 255)
-    label.BackgroundTransparency = 1
+    label.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+    label.BackgroundTransparency = 1 -- Transparent background
     label.Parent = guiFrame
 
     -- Toggle GUI visibility on button click
