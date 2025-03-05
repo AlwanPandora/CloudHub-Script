@@ -64,6 +64,13 @@ end)
 
 local btns = serv:Channel("Trolling")
 
+btns:Button("Punch Fling Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
+end)
+
+btns:Seperator()
+
 btns:Button("Ghost Hub", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
