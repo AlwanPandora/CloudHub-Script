@@ -167,6 +167,8 @@ end)
 
 local btns = serv:Channel("Murder Mystery 2")
 
+btns:Label("Theres only one MM2 script because of the steal scripts", true)
+
 btns:Button("Yarmh Hub (BEST)", function()
     DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
