@@ -32,6 +32,8 @@ end)
 
 btns:Seperator()
 
+btns:Label("The game must have collision on", true)
+
 btns:Button("Touch Fling Script", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
