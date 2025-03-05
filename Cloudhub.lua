@@ -39,6 +39,20 @@ btns:Button("Fling All", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 end)
 
+local btns = serv:Channel("Trolling")
+
+btns:Button("Ghost Hub", function()
+   DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+
+btns:Seperator()
+
+btns:Button("Fling All (Need Collision)", function()
+   DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+        loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
+
 local btns = serv:Channel("Blox Fruits")
 
 btns:Button("W-Azure", function()
