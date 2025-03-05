@@ -6,10 +6,6 @@ local serv = win:Server("CloudHub Script", "http://www.roblox.com/asset/?id=1146
 
 local btns = serv:Channel("Home")
 
-textbs:Textbox(
-    "Made By Cloud",
-    "Last Updated March 5!",
-
 btns:Button("Discord Server (Click to copy)", function()
     local textToCopy = "https://discord.gg/HWwfWeEVnW"
     setclipboard(textToCopy)
