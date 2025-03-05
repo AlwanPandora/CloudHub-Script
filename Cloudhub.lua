@@ -108,7 +108,7 @@ local btns = serv:Channel("MISC")
 
 btns:Button("Korblox and Headless", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fgasfga/ROBLOX-CLIENT-SIDED-Korblox-And-Headless-Script/main/Main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
 end)
 
 btns:Seperator()
