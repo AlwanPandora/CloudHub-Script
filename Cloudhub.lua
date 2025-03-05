@@ -82,6 +82,14 @@ btns:Button("FE trolling GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 end)
 
+local btns = serv:Channel("MISC")
+
+btns:Button("Korblox and Headless", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fgasfga/ROBLOX-CLIENT-SIDED-Korblox-And-Headless-Script/main/Main.lua"))()
+end)
+
+
 local btns = serv:Channel("Blox Fruits")
 
 btns:Button("W-Azure", function()
