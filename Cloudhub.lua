@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bl
 
 local win = DiscordLib:Window("CloudHub Script")
 
-local serv = win:Server("CloudHub Script", "rbxassetid://138135256087369")
+local serv = win:Server("CloudHub Script", "rbxassetid://121147616550665")
 
 local btns = serv:Channel("Home")
 
