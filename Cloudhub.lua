@@ -4,15 +4,15 @@ local win = DiscordLib:Window("CloudHub Script")
 
 local serv = win:Server("CloudHub Script", "")
 
-local btns = serv:Channel("Universal")
+local btns = serv:Channel("Home")
 
-btns:Button("Copy to Clipboard", function()
-    local textToCopy = "This is the text that will be copied to your clipboard!"
+btns:Button("Discord Server (Click to copy)", function()
+    local textToCopy = "https://discord.gg/HWwfWeEVnW"
     setclipboard(textToCopy)
     DiscordLib:Notification("Notification", "Text copied to clipboard!", "Okay!")
 end)
 
-btns:Seperator()
+local btns = serv:Channel("Universal")
 
 btns:Button("Mobile Keyboard", function()
     DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
