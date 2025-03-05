@@ -9,6 +9,7 @@ local btns = serv:Channel("Home")
 
 btns:Label("Welcome to Cloudhub Script", true)
 btns:Label("Made By Cloud", true)
+btns:Label("Last Updated - March 5", true)
 
 btns:Button("Discord Server (Click to copy)", function()
     local textToCopy = "https://discord.gg/HWwfWeEVnW"
