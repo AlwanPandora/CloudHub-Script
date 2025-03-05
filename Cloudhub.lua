@@ -7,7 +7,7 @@ local serv = win:Server("CloudHub Script", "")
 local btns = serv:Channel("Universal")
 
 btns:Button("Mobile Keyboard", function()
-   DiscordLib:Notification("Notification", "Killed everyone!", "Okay!")
+   DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
@@ -51,6 +51,13 @@ btns:Seperator()
 btns:Button("Fling All (Need Collision)", function()
    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
         loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Chat Bypass", function()
+   DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+        loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
 end)
 
 local btns = serv:Channel("Blox Fruits")
@@ -137,6 +144,13 @@ btns:Seperator()
 btns:Button("Auto Kill Off", function()
           DiscordLib:Notification("Notification", "Executed!", "Okay!")
     getgenv().BatusMadeThisShit = false
+end)
+
+local btns = serv:Channel("Murder Mystery 2")
+
+btns:Button("Yarmh Hub (BEST)", function()
+   DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
 end)
 
 
