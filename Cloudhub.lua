@@ -1,6 +1,6 @@
 local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
 
-local win = DiscordLib:Window("CloudHub Script")
+local win = DiscordLib:Window("CloudHub Script (DO NOT CLICK X to minimize, click on the image)")
 
 local serv = win:Server("CloudHub Script", "rbxassetid://121147616550665")
 
