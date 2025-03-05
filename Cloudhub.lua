@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bl
 
 local win = DiscordLib:Window("CloudHub Script (DO NOT CLICK X to minimize, click on the image)")
 
-local serv = win:Server("CloudHub Script", "rbxassetid://121147616550665")
+local serv = win:Server("GAME SCRIPTS", "rbxassetid://121147616550665")
 
 local btns = serv:Channel("Home")
 
@@ -18,114 +18,6 @@ btns:Button("Discord Server (Click to copy)", function()
     DiscordLib:Notification("Notification", "Text copied to clipboard!", "Okay!")
 end)
 
-local btns = serv:Channel("Universal")
-
-btns:Button("Mobile Keyboard", function()
-    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-end)
-
-btns:Seperator()
-
-btns:Button("FLY GUI", function()
-    DiscordLib:Notification("Notification", "Executed!", "Okay!")
-    loadstring(game:HttpGet('https://pastebin.com/raw/ZxLiHtYN'))()
-end)
-
-btns:Seperator()
-
-btns:Button("Hitbox Expander", function()
-    DiscordLib:Notification("Notification", "Executed!", "Okay!")
-    loadstring(game:HttpGet("https://pastebin.com/raw/R6ttafTG"))()
-end)
-
-btns:Seperator()
-
-btns:Label("The game must have collision on", true)
-
-
-btns:Button("Punch Fling Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
-end)
-
-btns:Seperator()
-
-btns:Button("Touch Fling Script", function()
-    DiscordLib:Notification("Notification", "Executed!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
-end)
-
-btns:Seperator()
-
-btns:Button("Infinite Yield", function()
-    DiscordLib:Notification("Notification", "Executed!", "Okay!")
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
-btns:Seperator()
-
-btns:Button("Fling All", function()
-    DiscordLib:Notification("Notification", "Fling All executed!", "Okay!")
-    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
-end)
-
-local btns = serv:Channel("Trolling")
-
-btns:Button("Punch Fling Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
-end)
-
-btns:Seperator()
-
-btns:Button("Ghost Hub", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
-end)
-
-btns:Seperator()
-
-btns:Button("Fling All (Need Collision)", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
-end)
-
-btns:Seperator()
-
-btns:Button("Chat Bypass", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
-end)
-
-btns:Seperator()
-
-btns:Button("FE trolling GUI", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
-end)
-
-local btns = serv:Channel("MISC")
-
-btns:Button("Korblox and Headless", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
-end)
-
-btns:Seperator()
-
-
-btns:Button("Noclip Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/refs/heads/main/NoClip%20Roblox"))()
-end)
-
-btns:Seperator()
-
-btns:Button("Walkspeed Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Prexry/Fenx-X/main/speed.lua"))()
-end)
 
 
 local btns = serv:Channel("Blox Fruits")
@@ -265,4 +157,113 @@ end)
 
 serv:Channel("by Cloud")
 
-win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+win:Server("MISC", "http://www.roblox.com/asset/?id=6031075938")
+
+local btns = serv:Channel("Universal")
+
+btns:Button("Mobile Keyboard", function()
+    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+btns:Seperator()
+
+btns:Button("FLY GUI", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet('https://pastebin.com/raw/ZxLiHtYN'))()
+end)
+
+btns:Seperator()
+
+btns:Button("Hitbox Expander", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet("https://pastebin.com/raw/R6ttafTG"))()
+end)
+
+btns:Seperator()
+
+btns:Label("The game must have collision on", true)
+
+
+btns:Button("Punch Fling Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
+end)
+
+btns:Seperator()
+
+btns:Button("Touch Fling Script", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Infinite Yield", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+btns:Seperator()
+
+btns:Button("Fling All", function()
+    DiscordLib:Notification("Notification", "Fling All executed!", "Okay!")
+    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
+
+local btns = serv:Channel("Trolling")
+
+btns:Button("Punch Fling Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
+end)
+
+btns:Seperator()
+
+btns:Button("Ghost Hub", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+
+btns:Seperator()
+
+btns:Button("Fling All (Need Collision)", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Chat Bypass", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
+end)
+
+btns:Seperator()
+
+btns:Button("FE trolling GUI", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+end)
+
+local btns = serv:Channel("MISC")
+
+btns:Button("Korblox and Headless", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
+end)
+
+btns:Seperator()
+
+
+btns:Button("Noclip Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/refs/heads/main/NoClip%20Roblox"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Walkspeed Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Prexry/Fenx-X/main/speed.lua"))()
+end)
