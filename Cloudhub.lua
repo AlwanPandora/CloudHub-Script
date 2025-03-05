@@ -173,6 +173,14 @@ btns:Button("Spider X Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Dead-Rails-SpiderXHub-Script/refs/heads/main/SpiderXHub%202.0.txt"))()
 end)
 
+btns:Seperator()
+
+btns:Button("Auto Farm Bond", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/deathrails/refs/heads/main/bond"))()
+end)
+
+
 serv:Channel("by Cloud")
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
