@@ -68,6 +68,13 @@ btns:Button("Chat Bypass", function()
     loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
 end)
 
+btns:Seperator()
+
+btns:Button("FE trolling GUI", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+end)
+
 local btns = serv:Channel("Blox Fruits")
 
 btns:Button("W-Azure", function()
@@ -180,6 +187,26 @@ btns:Button("Auto Farm Bond", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Emplic/deathrails/refs/heads/main/bond"))()
 end)
 
+local btns = serv:Channel("Driving Empire")
+
+btns:Button("Driving Empire Script", function()
+    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+    loadstring(request({Url = "https://seere.vip/cracks/midnightracinghub.lua"}).Body)();
+end)
+
+local btns = serv:Channel("Anime Adventures")
+
+btns:Button("Imp Hub", function()
+    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/alan11ago/Hub/refs/heads/main/ImpHub.lua"))()
+end)
+
+local btns = serv:Channel("Prison Life")
+
+btns:Button("Tbao Hub", function()
+    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
+end)
 
 serv:Channel("by Cloud")
 
