@@ -6,6 +6,10 @@ local serv = win:Server("CloudHub Script", "rbxassetid://121147616550665")
 
 local btns = serv:Channel("Home")
 
+local lbls = serv:Channel("Home")
+
+lbls:Label("Made by Cloud")
+
 btns:Button("Discord Server (Click to copy)", function()
     local textToCopy = "https://discord.gg/HWwfWeEVnW"
     setclipboard(textToCopy)
