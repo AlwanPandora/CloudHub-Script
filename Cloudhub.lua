@@ -89,6 +89,21 @@ btns:Button("Korblox and Headless", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fgasfga/ROBLOX-CLIENT-SIDED-Korblox-And-Headless-Script/main/Main.lua"))()
 end)
 
+btns:Seperator()
+
+
+btns:Button("Noclip Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/refs/heads/main/NoClip%20Roblox"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Walkspeed Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Prexry/Fenx-X/main/speed.lua"))()
+end)
+
 
 local btns = serv:Channel("Blox Fruits")
 
