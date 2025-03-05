@@ -157,7 +157,7 @@ end)
 
 serv:Channel("by Cloud")
 
-win:Server("MISC", "http://www.roblox.com/asset/?id=6031075938")
+local serv = win:Server("MISC", "rbxassetid://121147616550665")
 
 local btns = serv:Channel("Universal")
 
