@@ -153,6 +153,21 @@ btns:Button("Yarmh Hub (BEST)", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
 end)
 
+local btns = serv:Channel("Dead Rails")
+
+btns:Button("Speed Hub X", function()
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+btns:Seperator()
+
+btns:Button("Spider X Hub", function()
+          DiscordLib:Notification("Notification", "Executed!", "Okay!")
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Dead-Rails-SpiderXHub-Script/refs/heads/main/SpiderXHub%202.0.txt"))()
+end)
+
+
 
 
 
