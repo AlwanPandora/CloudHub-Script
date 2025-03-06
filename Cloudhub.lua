@@ -162,6 +162,12 @@ btns:Button("Mobile Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
+btns:Button("HUG PEOPLE", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/fe/refs/heads/main/FEHUGG"))()
+end)
+
+
 
 btns:Button("FLY GUI", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
