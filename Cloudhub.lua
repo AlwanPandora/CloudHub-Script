@@ -207,7 +207,7 @@ btns:Seperator()
 
 
 
-btns:Button("Punch Fling Script", function()
+btns:Button("(OP) Punch Fling Script", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
 end)
@@ -230,7 +230,7 @@ end)
 
 btns:Seperator()
 
-btns:Button("Fling All (Need Collision)", function()
+btns:Button("(OP) Fling All (Need Collision)", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
     loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 end)
