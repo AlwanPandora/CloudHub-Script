@@ -10,6 +10,7 @@ local btns = serv:Channel("Home")
 btns:Label("Welcome to Cloudhub Script", true)
 btns:Label("BUG FOUND: To minimize this GUI, press the christmas image", true)
 btns:Label("Made By Cloud", true)
+btns:Label("NOTE: Some scripts may not work", true)
 btns:Label("Created - March 4, 2025", true)
 btns:Label("Last Updated - March 5", true)
 
@@ -155,6 +156,16 @@ btns:Button("Tbao Hub", function()
     DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaohubPrisonLife"))()
 end)
+
+local btns = serv:Channel("Murderers Vs Sheriffs Duels")
+
+btns:Button("OP MVSD SCRIPT (Recommended)", function()
+    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://pastebin.com/raw/4MvbLUwi"))()
+end)
+
+
+
 
 serv:Channel("by Cloud")
 
