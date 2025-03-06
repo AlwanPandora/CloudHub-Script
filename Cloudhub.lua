@@ -162,11 +162,6 @@ btns:Button("Mobile Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
-btns:Button("HUG PEOPLE", function()
-    DiscordLib:Notification("Notification", "Executed!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/fe/refs/heads/main/FEHUGG"))()
-end)
-
 
 
 btns:Button("FLY GUI", function()
@@ -199,6 +194,11 @@ btns:Label("The game must have collision on for the flings to work", true)
 btns:Button("Ghost Hub", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+
+btns:Button("Hug People Script (Annoying)", function()
+    DiscordLib:Notification("Notification", "Executed!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JSFKGBASDJKHIOAFHDGHIUODSGBJKLFGDKSB/fe/refs/heads/main/FEHUGG"))()
 end)
 
 
