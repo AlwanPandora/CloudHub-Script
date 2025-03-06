@@ -152,7 +152,7 @@ local btns = serv:Channel("Zombie Attack")
 
 btns:Button("Zombie Attack", function()
     DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Zombie-Attack-Remake/main/Projeto%20LKA"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Zombie-Attack-Remake/main/Projeto%20LKA"))();
 end)
 
 local serv = win:Server("MISC", "rbxassetid://137710625866363")
