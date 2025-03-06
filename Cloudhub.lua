@@ -12,7 +12,7 @@ btns:Label("BUG FOUND: To minimize this GUI, press the christmas image", true)
 btns:Label("Made By Cloud", true)
 btns:Label("NOTE: Some scripts may not work", true)
 btns:Label("Created - March 4, 2025", true)
-btns:Label("Last Updated - March 5", true)
+btns:Label("Last Updated - March 6", true)
 
 btns:Button("Discord Server (Click to copy)", function()
     local textToCopy = "https://discord.gg/HWwfWeEVnW"
@@ -146,6 +146,13 @@ local btns = serv:Channel("Murderers Vs Sheriffs Duels")
 btns:Button("OP MVSD SCRIPT (Recommended)", function()
     DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://pastebin.com/raw/4MvbLUwi"))()
+end)
+
+local btns = serv:Channel("Zombie Attack")
+
+btns:Button("Auto Farm, Auto Aimbot, Walkspeed", function()
+    DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtixz/Zombie-Attack-Remake/main/Projeto%20LKA"))(); 
 end)
 
 
