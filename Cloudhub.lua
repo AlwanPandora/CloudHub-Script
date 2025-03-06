@@ -32,14 +32,10 @@ btns:Button("W-Azure", function()
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 end)
 
-btns:Seperator()
-
 btns:Button("Redz Hub", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 end)
-
-btns:Seperator()
 
 btns:Button("HoHo Hub (Key)", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
@@ -53,14 +49,10 @@ btns:Button("Zenith Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/ZenithHub/refs/heads/main/Loader"))()
 end)
 
-btns:Seperator()
-
 btns:Button("Native Script", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
 end)
-
-btns:Seperator()
 
 btns:Button("Ronix Hub", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
@@ -74,8 +66,6 @@ btns:Button("Tbao Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/game/refs/heads/main/TbaoHubBlueLockRivals"))()
 end)
 
-btns:Seperator()
-
 btns:Button("Infinite Stamina", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     local args = {
@@ -84,8 +74,6 @@ btns:Button("Infinite Stamina", function()
 
     game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("StaminaService"):WaitForChild("RE"):WaitForChild("DecreaseStamina"):FireServer(unpack(args))
 end)
-
-btns:Seperator()
 
 btns:Button("Auto farm script", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
@@ -122,14 +110,10 @@ btns:Button("Speed Hub X", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 end)
 
-btns:Seperator()
-
 btns:Button("Spider X Hub", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/Dead-Rails-SpiderXHub-Script/refs/heads/main/SpiderXHub%202.0.txt"))()
 end)
-
-btns:Seperator()
 
 btns:Button("Auto Farm Bond", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
@@ -178,14 +162,11 @@ btns:Button("Mobile Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
-btns:Seperator()
 
 btns:Button("FLY GUI", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet('https://pastebin.com/raw/ZxLiHtYN'))()
 end)
-
-btns:Seperator()
 
 btns:Button("Hitbox Expander", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
@@ -203,8 +184,6 @@ btns:Button("Ghost Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
 end)
 
-btns:Seperator()
-
 
 
 btns:Button("(OP) Punch Fling Script", function()
@@ -212,14 +191,11 @@ btns:Button("(OP) Punch Fling Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
 end)
 
-btns:Seperator()
-
 btns:Button("Touch Fling Script", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
 end)
 
-btns:Seperator()
 
 btns:Button("Infinite Yield", function()
     DiscordLib:Notification("Notification", "Executed!", "Okay!")
@@ -227,22 +203,17 @@ btns:Button("Infinite Yield", function()
 end)
 
 
-
-btns:Seperator()
-
 btns:Button("(OP) Fling All (Need Collision)", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
     loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 end)
 
-btns:Seperator()
 
 btns:Button("Chat Bypass", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
     loadstring(game:HttpGet('https://pastes.io/raw/lstrrfipqq'))();
 end)
 
-btns:Seperator()
 
 btns:Button("FE trolling GUI", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
@@ -256,7 +227,6 @@ btns:Button("Korblox and Headless", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
 end)
 
-btns:Seperator()
 
 
 btns:Button("Noclip Script", function()
@@ -264,7 +234,6 @@ btns:Button("Noclip Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/refs/heads/main/NoClip%20Roblox"))()
 end)
 
-btns:Seperator()
 
 btns:Button("Walkspeed Script", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
