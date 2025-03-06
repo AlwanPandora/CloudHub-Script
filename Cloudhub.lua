@@ -180,9 +180,24 @@ btns:Button("Hitbox Expander", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/R6ttafTG"))()
 end)
 
+
+local btns = serv:Channel("Trolling")
+
+btns:Button("Punch Fling Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
+end)
+
 btns:Seperator()
 
-btns:Label("The game must have collision on", true)
+btns:Button("Ghost Hub", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+
+btns:Seperator()
+
+btns:Label("The game must have collision on for the flings to work", true)
 
 
 btns:Button("Punch Fling Script", function()
@@ -204,26 +219,7 @@ btns:Button("Infinite Yield", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-btns:Seperator()
 
-btns:Button("Fling All", function()
-    DiscordLib:Notification("Notification", "Fling All executed!", "Okay!")
-    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
-end)
-
-local btns = serv:Channel("Trolling")
-
-btns:Button("Punch Fling Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
-end)
-
-btns:Seperator()
-
-btns:Button("Ghost Hub", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
-end)
 
 btns:Seperator()
 
