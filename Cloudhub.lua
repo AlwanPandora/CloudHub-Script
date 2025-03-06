@@ -173,6 +173,17 @@ btns:Button("Hitbox Expander", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/R6ttafTG"))()
 end)
 
+btns:Button("Noclip Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/refs/heads/main/NoClip%20Roblox"))()
+end)
+
+
+btns:Button("Walkspeed Script", function()
+    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Prexry/Fenx-X/main/speed.lua"))()
+end)
+
 
 local btns = serv:Channel("Trolling")
 
@@ -220,22 +231,7 @@ btns:Button("FE trolling GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 end)
 
-local btns = serv:Channel("MISC")
-
-btns:Button("Korblox and Headless", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV3/main/SCRIPTHUBV3", true))()
-end)
 
 
 
-btns:Button("Noclip Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/refs/heads/main/NoClip%20Roblox"))()
-end)
 
-
-btns:Button("Walkspeed Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Prexry/Fenx-X/main/speed.lua"))()
-end)
