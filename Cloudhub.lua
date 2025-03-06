@@ -183,12 +183,8 @@ end)
 
 local btns = serv:Channel("Trolling")
 
-btns:Button("Punch Fling Script", function()
-    DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
-end)
+btns:Label("The game must have collision on for the flings to work", true)
 
-btns:Seperator()
 
 btns:Button("Ghost Hub", function()
     DiscordLib:Notification("Notification", "Script Loaded!", "Okay!")
@@ -197,7 +193,6 @@ end)
 
 btns:Seperator()
 
-btns:Label("The game must have collision on for the flings to work", true)
 
 
 btns:Button("Punch Fling Script", function()
